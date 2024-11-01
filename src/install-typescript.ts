@@ -1,3 +1,3 @@
-const msg: string = 'Hello, TypeScript';
+const msg: string = 'Hello, Ts-node-dev';
 
 console.log({msg});
