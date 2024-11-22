@@ -33,3 +33,34 @@ console.log(Taro.profile());
 console.log(Taro.name);
 // console.log(Taro.age);
 // let Hanako = new Person();
+
+
+// ============================================
+
+// public 
+class Animal {
+  public name : string;
+
+  public constructor(theName: string) {
+    this.name = theName
+  }
+
+  private move(distanceInMeter: number) {
+    console.log(`${this.name} moved${distanceInMeter}m.`);
+  }
+}
+
+// const golilla = new Animal("ゴリラ");
+// golilla.move(10);
+
+// golilla.name = "ゴリラゴリラ";
+// golilla.move(20);
+
+// class Gorilla extends Animal {
+//   move(distanceInMeter: number) {
+//     super.move(distanceInMeter * 10);
+//   }
+// }
+
+// const golilla = new Gorilla("速いゴリラ");
+// golilla.move(10);
