@@ -6,4 +6,8 @@ type DetailedProfile = {
   weight: number;
 }
 
-type SimpleProfile = Pick<DetailedProfile, 'name' | 'height'>
+// 抽出
+type PickProfile = Pick<DetailedProfile, 'name' | 'height' >
+
+// 除外
+type OmitProfile = Omit<DetailedProfile, 'height' | 'weight'>
